@@ -1,0 +1,227 @@
+/* 
+Colors used: 
+Primary Color (MistyRose): #F1DEDE;
+Secondary Color (Puce): #D496A7
+*/
+header {
+    background-color: #d496a7;
+    text-align: center;
+    padding: 10px; /* inner space to all sides */
+    margin: 10px 5px;  /* 10px to top and bottom & 5px to left and right */
+    box-shadow: 0px 4px 4px #5D576B;
+    position:relative;
+}
+ body {
+    background-color: #f1dede;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px; /* Sets the font size to 16px */
+    font-weight: 300;
+    line-height: 1.6;
+    color: black;
+}
+main{
+    padding-top: 133px;
+}
+ h1, h2, h3, h4 {
+    line-height: 1.4;
+ }
+
+h1 {
+    font-size: 2.75em;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2.25em;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1.75em;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 1-35em;
+    font-weight: 400;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    color: #5D576B;
+    text-decoration: none; /* No underlining */
+}
+a:visited { /*visited link */
+    color: #ffffff;
+}
+a:hover,
+a:focus {
+    color: #5D576B;
+    text-decoration: none; /* Underlining when hovering over a link */
+}
+a:active { /* selected link */
+    color: #FFADC6
+}
+.button {
+    display: inline-block;
+    background-color: #5D576B;
+    color: #5D576B;
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid #5D576B;
+    transition: 0.2s;
+}
+.button:hover {
+    opacity: 0.8; /* reduces the opacity of the button to 80% */
+    text-decoration: none;
+     color: #5D576B ;
+}
+.button.contact {
+    background-color: #5D576B;
+    color: #ffffff;
+    text-transform: uppercase;
+    border: 2px solid #5D576B;
+}
+
+.button.contact:hover {
+    background-color: #5D576B;
+    color: #5D576B;
+}
+
+.button.project {
+    background-color: transparent;
+    color: #5D576B;
+    text-transform: none;
+    border: 2px solid #5D576B;
+}
+.button.project:hover {
+    background-color: #5D576B;
+    color: #5D576B;
+}
+.container {
+    padding: 0 15px;
+}
+.row {
+    margin: 25px 0; /* 25px top and bottom, 0 left and right */
+    clear: both;
+}
+#work .row { 
+    padding-bottom: 25px; 
+    border-bottom: 1px solid #5D576B; 
+}
+
+#hero h1 {
+    text-align: center;
+}
+
+#hero p {
+    font-size: larger;
+    font-weight: 325;
+    padding-bottom: 100px;
+}
+
+#hero {
+    background-color: #ffffff;
+    padding: 20px;
+    display: inline-block;
+    width: 100%;
+}
+.logo {
+    max-width: 250px;
+}
+nav > ul {
+    list-style-type: none;
+    padding: 0;
+}
+nav > ul > li {
+    display: inline-block;
+}
+nav > ul > li > a {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #5D576B;
+}
+.Introduction {
+    text-align: center;
+}
+#work h2 {
+    text-align: center;
+    padding-bottom: 100px;
+    text-transform: uppercase;
+}
+#work img {
+    max-width: 720px;
+}
+
+[class*="col-"] {
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+#contact h2 {
+    text-align: center;
+}
+
+#contact p {
+    text-align: center;
+}
+
+#contact img {
+    max-width: 200px;
+}
+
+#profile img {
+    max-height: 600px;
+    max-width: 400px;
+}
+
+#contact a {
+    text-align: center;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+     header {
+        text-align: unset;
+        padding: 20px 0 13px;
+     } 
+    .col-md-6 {
+        width: 50%;
+    }
+    nav {
+        width: auto;
+        float: right;
+        margin-top: 4px ;
+    } 
+    #work .row { 
+        min-height: 400px;
+    }
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+
+
+}
