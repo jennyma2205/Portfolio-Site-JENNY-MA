@@ -4,6 +4,8 @@ Primary Color (MistyRose): #F1DEDE;
 Secondary Color (Puce): #D496A7
 */
 
+/* Layout styling */
+
 header {
     background-color: #d496a7;
     text-align: center;
@@ -18,7 +20,7 @@ header {
     font-size: 16px; /* Sets the font size to 16px */
     font-weight: 300;
     line-height: 1.6;
-    color: black;
+    color: rgba(0, 0, 0, 0.862);
 }
 main{
     padding-top: 133px;
@@ -60,7 +62,7 @@ a:visited { /*visited link */
 }
 a:hover,
 a:focus {
-    color: #5D576B;
+    color: #ffffff;
     text-decoration: none; /* Underlining when hovering over a link */
 }
 a:active { /* selected link */
@@ -69,7 +71,7 @@ a:active { /* selected link */
 .button {
     display: inline-block;
     background-color: #5D576B;
-    color: #5D576B;
+    color: #ffffff;
     font-weight: 400;
     padding: 10px;
     border-radius: 3px;
@@ -90,7 +92,7 @@ a:active { /* selected link */
 
 .button.contact:hover {
     background-color: #5D576B;
-    color: #5D576B;
+    color: #ffffff;
 }
 
 .button.project {
@@ -160,7 +162,7 @@ nav > ul > li > a {
 }
 
 [class*="col-"] {
-    float: left;
+    float: center;
     padding-left: 10px;
     padding-right: 10px;
 }
