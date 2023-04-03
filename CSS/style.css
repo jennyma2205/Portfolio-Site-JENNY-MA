@@ -66,12 +66,12 @@ a:focus {
     text-decoration: none; /* Underlining when hovering over a link */
 }
 a:active { /* selected link */
-    color: #FFADC6
+    color: #f27fa2
 }
 .button {
     display: inline-block;
     background-color: #5D576B;
-    color: #ffffff;
+    color: #5D576B;
     font-weight: 400;
     padding: 10px;
     border-radius: 3px;
