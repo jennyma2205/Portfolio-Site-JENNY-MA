@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
-<head>
-    <link rel="preconnect" href="https://fonts.google.com/specimen/Merriweather?query=MERRI">
+    <head>
+        <link rel="preconnect" href="https://fonts.google.com/specimen/Merriweather?query=MERRI">
         <link rel="preconnect" href="https://fonts.google.com/specimen/Merriweather?query=MERRI" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
         <link rel="normalize" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
@@ -11,14 +10,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
-    <title>About Me</title>
-</head>
+        <title>About Me</title>
+    </head>
 
-<body>
+<body class="aboutpage">
     <header>
-        <img class="logo" src="https://via.placeholder.com/150x50?text=Logo" alt="Your Name" >
-           <div>
-             <h1>About Me</h1>
+        <div class="container">
+           <img class="logo" src="https://via.placeholder.com/150x50?text=Logo" alt="Your Name" >
               <nav>
                 <ul>
                     <li><a href="home.html"> Work</a></li>
@@ -26,23 +24,25 @@
                     <li><a href="#contact"> Contact</a></li>
                 </ul>
               </nav>
-           </div>
+        </div>
     </header>
-
-        <div>
-            <picture>
-                <source srcset="IMAGES/profilepicture.jpg" media="(max-width: 600px)">
-                <img src="Images/profilepicture.jpg" alt="IMAGES">
-            </picture>
-        </div>
-        <div>
-            <h2>Hey, my name is Jenny</h2>
-            <p>
+    <main id="profile" class="container">
+        <div class="row">
+            <div class="col-md-6">
+               <picture>
+                   <source srcset="IMAGES/profilepicture.jpg" media="(max-width: 600px)">
+                   <img src="Images/profilepicture.jpg" alt="IMAGES">
+               </picture>
+            </div>
+            <div class="col-md-6">
+               <h2>Hey, my name is Jenny</h2>
+               <p>
                 I am a UI Designer based in New York. Being a young adult just starting to navigate the adult world, I wasn’t sure what I wanted to be in the future. I was in the medical field before this and upon doing a lot of research, I found interest in UX/UI. I always found myself to be a creative person who enjoys art and creating artwork. I also found interest in the tech industry and when I landed on UX/UI, I thought it was the perfect thing for me. I started my journey on CareerFoundry and learned essential skills, not only in UX/UI, but also front end development. With everything that I learned, I created a handful of projects that you see here and my goal now is to become the next best product designer. 
-            </p>
+               </p>
+            </div>
         </div>
-        <div>
-            <div>
+        <div class="row">
+            <div class="col-md-6">
                 <h3>Relevant Skills</h3>
                 <ul>
                     <li><a> UI Design, UX Research, User Testing, User Flows, Prototyping, User Personas, Wireframing</a></li>
@@ -58,32 +58,39 @@
             </div>
         </div>
 
-    <h2>Interested in finding out more? Download my resume!</h2>
-    <a href="files/RESUME2021.pdf" target="RESUME2021" download>Download My Resume</a>
-
-<footer id="contact">
-    <h2>Get in touch</h2>
-    <p>
-        Give me a call! <a href=""tel:9175219165">+ 9175219165</a> 
-    </p>
-    <p>
-        Prefer sending an email?
-    </p>
-    <div>
-        <a href="mailto:office@careerfoundry.com">Email me</a>
+    <div class="row" id="resume">
+       <h2>Interested in finding out more? Download my resume!</h2>
+       <a href="files/JennyMaResume2023.pdf" download class="button" target="_blank">My resume</a>
     </div>
+
+    <footer id="contact">
+        <div class="container"></div>
+        <h2>Get in touch</h2>
+        <p>
+            Interested in working with me?
+            Give me a call! 
+            <div>
+              <a href="tel:9175219165" download class="button">+ 9175219165</a>
+            </div>
+        <p>
+        Prefer sending an email?
+          <div>
+            <a href="mailto:office@careerfoundry.com" download class="button">Email me</a>
+          </div>
+        </p>
+    
     
     <a href="SOCIAL LINK">
-        <IMG src="https://via.placeholder.com/32">
-        <IMG src="https://via.placeholder.com/32">
-        <IMG src="https://via.placeholder.com/32">
-        <IMG src="https://via.placeholder.com/32">
+        <IMG src="https://via.placeholder.com/32x32">
+        <IMG src="https://via.placeholder.com/32x32">
+        <IMG src="https://via.placeholder.com/32x32">
+        <IMG src="https://via.placeholder.com/32x32">
     </a>
-    <div>
-       <p>Copyright Jenny Ma 2023</p>
-    </div>
-</footer>
-
-</body>
-
-</html>
+    
+    <p>Copyright Jenny Ma 2023</p>
+    
+    </footer>
+    
+    </body>
+    
+    </html>
