@@ -3,19 +3,6 @@ Colors used:
 Primary Color (MistyRose): #F1DEDE;
 Secondary Color (Puce): #D496A7
 */
-* { 
-    box-sizing: border-box;
-}
-
-/* Layout styling */
-
-html {
-    scroll-behavior: smooth;
-}
-
-.container {
-    padding: 0 15px;
-}
 
 header {
     background-color: #d496a7;
@@ -184,11 +171,9 @@ header .container {
 nav > ul {
     list-style-type: none;
     padding: 0;
-    margin: 0;
+    margin: 1em 0;
 }
-nav > ul > li {
-    display: inline-block;
-}
+
 nav > ul > li > a {
     padding: 0 15px;
     text-transform: uppercase;
@@ -202,6 +187,12 @@ nav > ul > li > a {
 .work {
     text-align: center;
     max-width: 1500px;
+    margin: 10px auto;
+}
+
+.project-page .work {
+    text-align: center;
+    max-width: 700px;
     margin: 10px auto;
 }
 
@@ -239,6 +230,8 @@ nav > ul > li > a {
 #contact img {
     max-width: 30px;
     max-height: 30px;
+    margin-right: 2.5px;
+    margin-top: 10px;
 }
 
 #profile img {
@@ -295,6 +288,37 @@ height: auto;
     animation: 30s cloud-move-reverse infinite alternate linear;
 }
 
+.berlin.illustration {
+    min-width: 300px;
+}
+
+.navtoggle li:not(:last-child) {
+    display: none;
+}
+.navtoggle, .navtoggle.responsive {
+    position: relative;
+}
+.navtoggle li .icon {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    font-size: 20px;
+}
+.navtoggle.responsive li {
+    display: block;
+}
+.navtoggle.responsive nav {
+    padding: 24px 0 0;
+}
+.navtoggle.responsive li {
+    display: block;
+    padding: 10px 0;
+    border-top: 1px solid #ffffff;
+}
+.navtoggle.responsive li:last-child {
+    padding: 0 0 10px;
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -302,70 +326,35 @@ Medium devices (640px and larger)
      header {
         text-align: unset;
         padding: 20px 0 13px;
-     } 
-     nav {
-        width: auto;
-        float: right;
+    
      }
-
     .col-md-6 {
         width: 50%;
     }
-
-    .col-md-12 {
-        width: 100%;
+    nav {
+        width: auto;
+        float: right;
+        margin-top: 4px;
     }
-
-    .logo {
-        min-width: 250px;
-    }
-
-    .navtoggle.responsive nav {
-        padding: 0;
-    }
-
-    .navtoggle.responsive li {
-        padding: 0;
-        margin: 0;
-        border-top: 0;
-    }
-    nav > ul {
-        margin: 0;
-        border-top: 0;
-    }
-
-    nav > ul > li {
-        display: inline-block;
+    #work .row {
+        min-height: 400px;
     }
 
     .navtoggle li:not(:last-child) {
         display: inline-block;
     }
-
-    .navtoggle li:last-child {
-        display: none;
-    }
     
-    nav {
-        width: auto;
-        float: right;
-        margin-top: 4px ;
-    } 
-    #work .row { 
-        min-height: 400px;
-    }
 }
-
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
 
 }
+
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
-
 
 }

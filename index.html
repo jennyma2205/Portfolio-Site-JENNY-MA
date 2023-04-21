@@ -20,14 +20,18 @@
     <body>
         <header>
             <div class="container">
+              <div class="navtoggle" id="myNavtoggle">
                 <img class="logo" src="IMAGES/LOGO.png" media="(max-width: 100px)" alt="Your Name" >
                 <nav>
                     <ul>
                         <li><a href="index.html">Work</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="#contact">Contact</a></li>
+                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i
+                               class="fas fa-bars"></i></a></li>
                     </ul>
                 </nav>
+              </div>
             </div>
         </header>
 
@@ -737,9 +741,11 @@
 <p>Copyright Jenny Ma 2023</p>
 
 </footer>
-
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="JS/jquery-3.6.4.min.js"></script>
 <script src="js/scripts.js"></script>
+<script src="https://kit.fontawesome.com/e0f729f372.js" crossorigin="anonymous"></script>
 
 </body>
 
