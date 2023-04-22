@@ -6,11 +6,13 @@ Secondary Color (Puce): #D496A7
 
 header {
     background-color: #d496a7;
-    text-align: center;
-    padding: 10px; /* inner space to all sides */
+    padding: 10px 0 4px; /* inner space to all sides */
     margin: 10px 5px;  /* 10px to top and bottom & 5px to left and right */
     box-shadow: 0px 4px 4px #5D576B;
     position:relative;
+}
+main {
+    padding-top: 56px;
 }
  body {
     background-color: #f1dede;
@@ -166,7 +168,7 @@ header .container {
     width: 100%;
 }
 .logo {
-    max-width: 250px;
+    max-width: 150px;
 }
 nav > ul {
     list-style-type: none;
@@ -291,7 +293,10 @@ height: auto;
 .berlin.illustration {
     min-width: 300px;
 }
-
+nav > ul {
+    list-style-type: none;
+    padding: 0;
+}
 .navtoggle li:not(:last-child) {
     display: none;
 }
@@ -303,6 +308,7 @@ height: auto;
     right: 0;
     top: 2px;
     font-size: 20px;
+    padding-right: 0;
 }
 .navtoggle.responsive li {
     display: block;
@@ -313,7 +319,7 @@ height: auto;
 .navtoggle.responsive li {
     display: block;
     padding: 10px 0;
-    border-top: 1px solid #ffffff;
+    border-top: 1px solid rgba(red, green, blue, alpha);
 }
 .navtoggle.responsive li:last-child {
     padding: 0 0 10px;
@@ -322,7 +328,7 @@ height: auto;
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 641px) {
      header {
         text-align: unset;
         padding: 20px 0 13px;
@@ -334,15 +340,24 @@ Medium devices (640px and larger)
     nav {
         width: auto;
         float: right;
-        margin-top: 4px;
+        margin-top: 30px;
     }
     #work .row {
         min-height: 400px;
     }
-
+    nav > ul > li {
+        display: inline-block;
+    }
     .navtoggle li:not(:last-child) {
         display: inline-block;
     }
+    .navtoggle li:last-child {
+        display: none;
+    }
+    nav > ul {
+        margin: 1em 0;
+    }
+
     
 }
 /* ==============================
