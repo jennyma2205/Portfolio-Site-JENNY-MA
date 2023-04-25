@@ -17,15 +17,20 @@
 <body class="aboutpage">
     <header>
         <div class="container">
-           <img class="logo" src="Images/LOGO.png" alt="Your Name" >
-              <nav>
+          <div class="navtoggle" id="myNavtoggle">
+            <img class="logo" src="IMAGES/LOGO.png" media="(max-width: 100px)" alt="Your Name" >
+            <nav>
                 <ul>
-                    <li><a href="index.html"> Work</a></li>
-                    <li><a href="about.html"> About</a></li>
-                    <li><a href="#contact"> Contact</a></li>
-                    <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+                    <li><a href="index.html" class="nav-button">Work</a></li>
+                    <li><a href="about.html" class="nav-button">About</a></li>
+                    <li><a href="#contact" class="nav-button">Contact</a></li>
+                    <li>
+                      <a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i>
+                      </a>
+                    </li>
                 </ul>
-              </nav>
+            </nav>
+          </div>
         </div>
     </header>
     <main id="profile" class="container">
